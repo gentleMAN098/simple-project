@@ -1,0 +1,355 @@
+main {
+  width: 100%;
+  height: auto;
+}
+.header {
+  width: 100%;
+  position: relative;
+}
+
+/*  start fixed nav header***** */
+
+.fixedHeader {
+  width: 100%;
+  height: 60px;
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  padding: 0 15px;
+  z-index: 999;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.fixedHeader > ul {
+  flex-grow: 1;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+}
+.fixedHeader > ul > li {
+  height: 100%;
+}
+.fixedHeader > ul > li > a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.fixedHeader > ul > li > a:hover {
+  background-color: #ccc;
+}
+.fixedHeader > a {
+  height: 100%;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  font-weight: normal;
+  font-weight: bold;
+}
+.fixedHeader > a:hover {
+  letter-spacing: 20px;
+}
+/*  end fixed nav header***** */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/jpg/mac.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header > section {
+  width: 900px;
+  height: 380px;
+  padding: 49px;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+header > section > h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+header > section > p {
+  width: 100%;
+}
+header > section > button {
+  width: 274px;
+  height: 58px;
+  background-color: rgba(204, 204, 204, 0.473);
+  transition: 0.3s;
+  border-radius: 4px;
+  font-size: 15px;
+}
+header > section > button:hover {
+  background-color: rgb(204, 204, 204);
+  cursor: pointer;
+}
+header > ul {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 24px 48px;
+}
+header > ul > li {
+  height: 100%;
+  color: white;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+header > ul > li:hover {
+  opacity: 1;
+}
+/*//////////////// end of header ///////////////////*/
+/* /////////////////////start about///// */
+.about,
+.team,
+.aboutWork {
+  width: 100%;
+  padding: 128px 16px;
+}
+.about > h3,
+.about > p,
+.team > h3,
+.team > p,
+.aboutWork > h3,
+.aboutWork > p {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 25px;
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.about > p,
+.team > p,
+.aboutWork > p {
+  font-size: 16px;
+  text-transform: lowercase;
+}
+.about > section,
+.team > section,
+.aboutWork > section {
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+}
+.about > section > div {
+  text-align: center;
+  width: 25%;
+  padding: 30px;
+}
+.about > section > div > figure {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about > section > div > figure > img {
+  width: 50px;
+  height: 50px;
+}
+.about > section > div > strong {
+  width: 100%;
+  height: 40px;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.about > section > div > p {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ///////////////end about///// */
+/* ///////////////////start work///// */
+.work {
+  width: 100%;
+  height: 650px;
+  background-color: #f1f1f1;
+  padding: 128px 35px;
+  display: flex;
+}
+.work > div:nth-of-type(2) {
+  width: 50%;
+  height: 100%;
+}
+.work > div > figure > img {
+  border-radius: 10px;
+}
+.caption {
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-right: 370px;
+}
+.caption > h3 {
+  height: auto;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.caption > p {
+  height: auto;
+  width: 100%;
+  line-height: 30px;
+}
+.caption > a {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  justify-content: center;
+  padding: 8px 16px;
+}
+.caption > a:hover {
+  background-color: #ccc;
+  color: black;
+}
+/* ///////////////end of work/////////////// */
+/* /////////////////////////////start team/////////// */
+.team > section {
+  width: 100%;
+}
+.team > section > div {
+  display: flex;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  margin: 25px;
+  width: 22.2%;
+}
+.team > section > div > figure {
+  width: 100%;
+  height: auto;
+}
+.team > section > div > figure > img {
+  width: 100%;
+  height: 300px;
+}
+.team > section > div > section {
+  padding: 20px;
+}
+.team > section > div > section > strong {
+  font-size: 24px;
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-weight: lighter;
+  width: 100%;
+}
+.team > section > div > section > p:nth-of-type(1) {
+  opacity: 0.6;
+  margin: 5px 0 20px 0;
+}
+.team > section > div > section > p:nth-of-type(2) {
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.team > section > div > section > button {
+  width: 100%;
+  line-height: 40px;
+  background-color: #f1f1f1;
+  border: none;
+  font-size: 22px;
+}
+.team > section > div > section > button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+/* /////////////////end of team////////////// */
+/* //////////////////////////start of summary//////////// */
+.summary {
+  width: 100%;
+  background-color: #616161;
+}
+
+.summary > div {
+  width: 25%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.summary > div > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 70px 20px 0;
+  font-size: 36px;
+  color: white;
+}
+.summary > div > p {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding-bottom: 40px;
+}
+/* //////////////////end of summary////////// */
+/* //////////////////////////////start of aboutWork/////////// */
+.aboutWork > section {
+  width: 100%;
+}
+.aboutWork > section > figure {
+  width: 24.99%;
+  padding: 10px 10px;
+}
+.aboutWork > section > figure > img {
+  width: 100%;
+}
+.aboutWork > section > figure > img:hover {
+  opacity: 0.6;
+}
+/* //////////////////end of aboutwork//////// */
+/* ////////////////////////start of footer////// */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  flex-wrap: wrap;
+  padding: 64px 0;
+}
+.footer > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.footer > div > a {
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: #000;
+}
+.footer > h2 {
+  margin: 50px 0;
+  text-transform: uppercase;
+}
+.footer > h2 > span {
+  transition: 1s;
+}
+.footer > h2 > span:hover {
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
