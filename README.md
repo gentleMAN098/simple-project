@@ -2,7 +2,8 @@
 
 
 # simple-project
-
+ <img alt="Eclipse Marketplace" src="https://img.shields.io/badge/updated-December2022-brightgreen"><img alt="Eclipse Marketplace" src="https://img.shields.io/badge/rating-3%2F5-green">
+ 
 
 
 Hello there guys! 👋
